@@ -1,0 +1,144 @@
+id: Drawer, Modal, Dropdown, Tooltip prop visible to open 1
+language: html
+rule:
+  kind: attribute_name
+  # 使用全匹配
+  regex: ^:visible$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        # 处理普通标签
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^(a-drawer|Drawer|a-modal|Modal|a-dropdown|Dropdown|a-tooltip|Tooltip)$
+        # 处理单闭合标签
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^(a-drawer|Drawer|a-modal|Modal|a-dropdown|Dropdown|a-tooltip|Tooltip)$
+fix: :open
+
+---
+id: Drawer, Modal, Dropdown, Tooltip prop visible to open 2
+language: html
+rule:
+  kind: attribute_name
+  regex: ^visible$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^(a-drawer|Drawer|a-modal|Modal|a-dropdown|Dropdown|a-tooltip|Tooltip)$
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^(a-drawer|Drawer|a-modal|Modal|a-dropdown|Dropdown|a-tooltip|Tooltip)$
+fix: open
+
+---
+id: Drawer, Modal, Dropdown, Tooltip v-model visible to open
+language: html
+rule:
+  kind: attribute_name
+  regex: ^v-model:visible$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^(a-drawer|Drawer|a-modal|Modal|a-dropdown|Dropdown|a-tooltip|Tooltip)$
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^(a-drawer|Drawer|a-modal|Modal|a-dropdown|Dropdown|a-tooltip|Tooltip)$
+fix: v-model:open
+
+---
+id: Tag prop/v-model visible replace by v-if
+language: html
+rule:
+  kind: attribute_name
+  regex: ^:visible$|^v-model:visible$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^a-tag$|^Tag$
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^a-tag$|^Tag$
+fix: v-if
+
+---
+id: Tag prop visible remove
+language: html
+rule:
+  kind: attribute_name
+  regex: ^visible$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^a-tag$|^Tag$
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^a-tag$|^Tag$
+fix: ''
+
+---
+id: Slider prop tooltipVisible to tooltipOpen 1
+language: html
+rule:
+  kind: attribute_name
+  regex: ^:tooltipVisible$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^a-slider$|^Slider$
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^a-slider$|^Slider$
+fix: :tooltipOpen
+
+---
+id: Slider prop tooltipVisible to tooltipOpen 2
+language: html
+rule:
+  kind: attribute_name
+  regex: ^:tooltip-visible$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^a-slider$|^Slider$
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^a-slider$|^Slider$
+fix: :tooltip-open
+
+---
+# TODO Table 组件 filterDropdownVisible 变为 filterDropdownOpen

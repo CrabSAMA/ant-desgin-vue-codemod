@@ -1,0 +1,86 @@
+id: prop dropdownClassName to popupClassName 1
+language: html
+rule:
+  kind: attribute_name
+  regex: ^dropdownClassName$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        # 处理普通标签
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^(a-auto-complete|AutoComplete|a-cascader|Cascader|a-select|Select|a-tree-select|TreeSelect|a-time-picker|TimePicker|a-date-picker|DatePicker|a-range-picker|RangePicker|a-mentions|Mentions)$
+        # 处理单闭合标签
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^(a-auto-complete|AutoComplete|a-cascader|Cascader|a-select|Select|a-tree-select|TreeSelect|a-time-picker|TimePicker|a-date-picker|DatePicker|a-range-picker|RangePicker|a-mentions|Mentions)$
+fix: popupClassName
+
+---
+id: prop dropdownClassName to popupClassName 2
+language: html
+rule:
+  kind: attribute_name
+  regex: ^dropdown-class-name$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        # 处理普通标签
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^(a-auto-complete|AutoComplete|a-cascader|Cascader|a-select|Select|a-tree-select|TreeSelect|a-time-picker|TimePicker|a-date-picker|DatePicker|a-range-picker|RangePicker|a-mentions|Mentions)$
+        # 处理单闭合标签
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^(a-auto-complete|AutoComplete|a-cascader|Cascader|a-select|Select|a-tree-select|TreeSelect|a-time-picker|TimePicker|a-date-picker|DatePicker|a-range-picker|RangePicker|a-mentions|Mentions)$
+fix: popup-class-name
+
+---
+id: prop dropdownClassName to popupClassName 3
+language: html
+rule:
+  kind: attribute_name
+  regex: ^:dropdownClassName$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        # 处理普通标签
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^(a-auto-complete|AutoComplete|a-cascader|Cascader|a-select|Select|a-tree-select|TreeSelect|a-time-picker|TimePicker|a-date-picker|DatePicker|a-range-picker|RangePicker|a-mentions|Mentions)$
+        # 处理单闭合标签
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^(a-auto-complete|AutoComplete|a-cascader|Cascader|a-select|Select|a-tree-select|TreeSelect|a-time-picker|TimePicker|a-date-picker|DatePicker|a-range-picker|RangePicker|a-mentions|Mentions)$
+fix: :popupClassName
+
+---
+id: prop dropdownClassName to popupClassName 4
+language: html
+rule:
+  kind: attribute_name
+  regex: ^:dropdown-class-name$
+  inside:
+    kind: attribute
+    inside:
+      any:
+        # 处理普通标签
+        - kind: start_tag
+          has:
+            kind: tag_name
+            regex: ^(a-auto-complete|AutoComplete|a-cascader|Cascader|a-select|Select|a-tree-select|TreeSelect|a-time-picker|TimePicker|a-date-picker|DatePicker|a-range-picker|RangePicker|a-mentions|Mentions)$
+        # 处理单闭合标签
+        - kind: self_closing_tag
+          has:
+            kind: tag_name
+            regex: ^(a-auto-complete|AutoComplete|a-cascader|Cascader|a-select|Select|a-tree-select|TreeSelect|a-time-picker|TimePicker|a-date-picker|DatePicker|a-range-picker|RangePicker|a-mentions|Mentions)$
+fix: :popup-class-name
