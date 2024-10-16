@@ -139,6 +139,3 @@ rule:
             kind: tag_name
             regex: ^a-slider$|^Slider$
 fix: :tooltip-open
-
----
-# TODO Table 组件 filterDropdownVisible 变为 filterDropdownOpen
