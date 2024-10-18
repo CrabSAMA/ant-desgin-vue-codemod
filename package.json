@@ -10,10 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ast-grep/cli": "^0.24.1",
-    "@ast-grep/napi": "^0.28.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.7.5"
+    "@ast-grep/cli": "^0.24.1"
   }
 }
