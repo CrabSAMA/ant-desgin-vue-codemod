@@ -1,13 +1,18 @@
 {
   "name": "ant-design-vue-codemod",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ant Design Vue codemod tools",
   "main": "index.js",
   "scripts": {
-    "grep": "ast-grep scan"
+    "grep": "ast-grep scan",
+    "publish": "npm publish",
+    "publish:dry": "npm publish --dry-run"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "ant-design-vue",
+    "codemod"
+  ],
+  "author": "CrabSAMA",
   "license": "ISC",
   "dependencies": {
     "@ast-grep/cli": "^0.24.1"
