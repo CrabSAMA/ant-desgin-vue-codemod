@@ -4,9 +4,7 @@
   "description": "Ant Design Vue codemod tools",
   "main": "index.js",
   "scripts": {
-    "grep": "ast-grep scan",
-    "publish": "npm publish",
-    "publish:dry": "npm publish --dry-run"
+    "grep": "ast-grep scan"
   },
   "keywords": [
     "ant-design-vue",
