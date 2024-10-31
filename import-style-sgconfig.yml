@@ -1,0 +1,7 @@
+ruleDirs:
+  - rules/style
+# utilDirs:
+#   - utils
+languageGlobs:
+  html: ['*.vue']
+  css: ['*.less']

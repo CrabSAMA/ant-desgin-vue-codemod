@@ -1,0 +1,52 @@
+id: import style remove warning for js 1
+language: JavaScript
+rule:
+  kind: import_statement
+  regex: ant-design-vue\/dist\/antd\.(less|css)
+severity: warning
+message: 'ant-design-vue v4 所有 css/less 文件在产物中全部移除，请移除该行代码'
+
+---
+id: import style remove warning for js 2
+language: JavaScript
+rule:
+  kind: import_statement
+  regex: ant-design-vue\/(lib|es)\/[^\/]+\/style(\/(index\.(js|css|less)|css(\.js)?))?
+severity: warning
+message: 'ant-design-vue v4 所有 css/less 文件在产物中全部移除，请移除该行代码'
+
+---
+id: import style remove warning for typescript 1
+language: TypeScript
+rule:
+  kind: import_statement
+  regex: ant-design-vue\/dist\/antd\.(less|css)
+severity: warning
+message: 'ant-design-vue v4 所有 css/less 文件在产物中全部移除，请移除该行代码'
+
+---
+id: import style remove warning for typescript 2
+language: TypeScript
+rule:
+  kind: import_statement
+  regex: ant-design-vue\/(lib|es)\/[^\/]+\/style(\/(index\.(js|css|less)|css(\.js)?))?
+severity: warning
+message: 'ant-design-vue v4 所有 css/less 文件在产物中全部移除，请移除该行代码'
+
+---
+id: import style remove warning for less 1
+language: css
+rule:
+  kind: import_statement
+  regex: ant-design-vue\/dist\/antd\.(less|css)
+severity: warning
+message: 'ant-design-vue v4 所有 css/less 文件在产物中全部移除，请移除该行代码'
+
+---
+id: import style remove warning for less 2
+language: css
+rule:
+  kind: import_statement
+  regex: ant-design-vue\/(lib|es)\/[^\/]+\/style\/index\.(css|less)
+severity: warning
+message: 'ant-design-vue v4 所有 css/less 文件在产物中全部移除，请移除该行代码'
