@@ -1,5 +1,5 @@
 ruleDirs:
-  - rules
+  - rules/prop
 # utilDirs:
 #   - utils
 languageGlobs:
