@@ -9,97 +9,519 @@ importers:
   .:
     dependencies:
       '@ast-grep/cli':
-        specifier: ^0.24.1
-        version: 0.24.1
+        specifier: ^0.29.0
+        version: 0.29.0
+      zx:
+        specifier: ^7.2.3
+        version: 7.2.3
 
 packages:
 
-  '@ast-grep/cli-darwin-arm64@0.24.1':
-    resolution: {integrity: sha1-lL+HGCaJP4cgLrkZUzbGSLZfCrc=}
+  '@ast-grep/cli-darwin-arm64@0.29.0':
+    resolution: {integrity: sha1-nkRwW2BM3up0QyjFUBAy7Nx6YTk=}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@ast-grep/cli-darwin-x64@0.24.1':
-    resolution: {integrity: sha1-iiFeYr0dghGlzehYJr9eta8yYB0=}
+  '@ast-grep/cli-darwin-x64@0.29.0':
+    resolution: {integrity: sha1-x6pg2smIHdN71s9y50JXKwYz7CE=}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@ast-grep/cli-linux-arm64-gnu@0.24.1':
-    resolution: {integrity: sha1-6dNoAcpeSxor/3RCZ/Kd5HIF7+E=}
+  '@ast-grep/cli-linux-arm64-gnu@0.29.0':
+    resolution: {integrity: sha1-H5jEiY7znq/Tf52MDlWX/iNTUsg=}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@ast-grep/cli-linux-x64-gnu@0.24.1':
-    resolution: {integrity: sha1-rWkWbLpgKF4vCg2eH8Hhf3g5swk=}
+  '@ast-grep/cli-linux-x64-gnu@0.29.0':
+    resolution: {integrity: sha1-7ElUR/Ytj40peOckYxXZJS8WSyI=}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@ast-grep/cli-win32-arm64-msvc@0.24.1':
-    resolution: {integrity: sha1-G08mnuocdjuuZIdbdPY5XmLjNFo=}
+  '@ast-grep/cli-win32-arm64-msvc@0.29.0':
+    resolution: {integrity: sha1-2YKo6EvEN79Vqk3AfnlAIo9GQ70=}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@ast-grep/cli-win32-ia32-msvc@0.24.1':
-    resolution: {integrity: sha1-zTrZVTjZzWjING5XRwpfBuB/DZY=}
+  '@ast-grep/cli-win32-ia32-msvc@0.29.0':
+    resolution: {integrity: sha1-zFVqieorWE5K5nwPTGNFJFShNzo=}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@ast-grep/cli-win32-x64-msvc@0.24.1':
-    resolution: {integrity: sha1-LXcIZUH92PIl+OntoQP6MiIQDs8=}
+  '@ast-grep/cli-win32-x64-msvc@0.29.0':
+    resolution: {integrity: sha1-B+JRCah+H1G9lLj15hoUM0//xs8=}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@ast-grep/cli@0.24.1':
-    resolution: {integrity: sha1-Btt9PohmL+u1iGZTsvPQYHRb7oM=}
+  '@ast-grep/cli@0.29.0':
+    resolution: {integrity: sha1-n3ZNdVLaot+zP//0wJ2S59oTj80=}
     engines: {node: '>= 12.0.0'}
     hasBin: true
+
+  '@nodelib/fs.scandir@2.1.5':
+    resolution: {integrity: sha1-dhnC6yGyVIP20WdUi0z9WnSIw9U=}
+    engines: {node: '>= 8'}
+
+  '@nodelib/fs.stat@2.0.5':
+    resolution: {integrity: sha1-W9Jir5Tp0lvR5xsF3u1Eh2oiLos=}
+    engines: {node: '>= 8'}
+
+  '@nodelib/fs.walk@1.2.8':
+    resolution: {integrity: sha1-6Vc36LtnRt3t9pxVaVNJTxlv5po=}
+    engines: {node: '>= 8'}
+
+  '@types/fs-extra@11.0.4':
+    resolution: {integrity: sha1-4WqGO7iEP7qMUAQ2K1pz4XvsykU=}
+
+  '@types/jsonfile@6.1.4':
+    resolution: {integrity: sha1-YUr+waEWTn1nC0p61k3z5763twI=}
+
+  '@types/minimist@1.2.5':
+    resolution: {integrity: sha1-7BB1XocUl7zYPv6SfkPsRujAdH4=}
+
+  '@types/node@18.19.61':
+    resolution: {integrity: sha1-8xvm9kPi5ij//Mo1n+WfIUu3eSM=}
+
+  '@types/ps-tree@1.1.6':
+    resolution: {integrity: sha1-+7Itq+PWS3kpXzfOCvtzIKJqyaY=}
+
+  '@types/which@3.0.4':
+    resolution: {integrity: sha1-LDqJvnDFaoSmlXpyZGOfOa5DQKE=}
+
+  braces@3.0.3:
+    resolution: {integrity: sha1-SQMy9AkZRSJy1VqEgK3AxEE1h4k=}
+    engines: {node: '>=8'}
+
+  chalk@5.3.0:
+    resolution: {integrity: sha1-Z8IKfr73Dn85cKAfkPohDLaGA4U=}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+
+  data-uri-to-buffer@4.0.1:
+    resolution: {integrity: sha1-2P6ysogeak9YwuCKz9Dig04mIi4=}
+    engines: {node: '>= 12'}
 
   detect-libc@2.0.3:
     resolution: {integrity: sha1-8M1QO0D5k5uJRpfRmtUIleMM9wA=}
     engines: {node: '>=8'}
 
+  dir-glob@3.0.1:
+    resolution: {integrity: sha1-Vtv3PZkqSpO6FYT0U0Bj/S5BcX8=}
+    engines: {node: '>=8'}
+
+  duplexer@0.1.2:
+    resolution: {integrity: sha1-Or5DrvODX4rgd9E23c4PJ2sEAOY=}
+
+  event-stream@3.3.4:
+    resolution: {integrity: sha1-SrTJoPWlTbkzi0w02Gv86PSzVXE=}
+
+  fast-glob@3.3.2:
+    resolution: {integrity: sha1-qQRQHlfP3S/83tRemaVP71XkYSk=}
+    engines: {node: '>=8.6.0'}
+
+  fastq@1.17.1:
+    resolution: {integrity: sha1-KlI/B6TnsegaQrkbi/IlQQd1O0c=}
+
+  fetch-blob@3.2.0:
+    resolution: {integrity: sha1-8JuNS71Frcbwwgt+eH55PjCdzOk=}
+    engines: {node: ^12.20 || >= 14.13}
+
+  fill-range@7.1.1:
+    resolution: {integrity: sha1-RCZdPKwH4+p9wkdRY4BkN1SgUpI=}
+    engines: {node: '>=8'}
+
+  formdata-polyfill@4.0.10:
+    resolution: {integrity: sha1-JIB8McnUAuACqz2McgFEzriEhCM=}
+    engines: {node: '>=12.20.0'}
+
+  from@0.1.7:
+    resolution: {integrity: sha1-g8YK/Fi5xWmXAH7Rp2izqzA6RP4=}
+
+  fs-extra@11.2.0:
+    resolution: {integrity: sha1-5w4X361kIyKH0BkpOZ4Op8hrDls=}
+    engines: {node: '>=14.14'}
+
+  fx@35.0.0:
+    resolution: {integrity: sha1-RHh85+2ZfkysoxMRnshYToQT7Z0=}
+    hasBin: true
+
+  glob-parent@5.1.2:
+    resolution: {integrity: sha1-hpgyxYA0/mikCTwX3BXoNA2EAcQ=}
+    engines: {node: '>= 6'}
+
+  globby@13.2.2:
+    resolution: {integrity: sha1-Y7kLG/aGGcITVHXL1OceZqoJBZI=}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  graceful-fs@4.2.11:
+    resolution: {integrity: sha1-QYPk6L8Iu24Fu7L30uDI9xLKQOM=}
+
+  ignore@5.3.2:
+    resolution: {integrity: sha1-PNQOcp82Q/2HywTlC/DrcivFlvU=}
+    engines: {node: '>= 4'}
+
+  is-extglob@2.1.1:
+    resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=}
+    engines: {node: '>=0.10.0'}
+
+  is-glob@4.0.3:
+    resolution: {integrity: sha1-ZPYeQsu7LuwgcanawLKLoeZdUIQ=}
+    engines: {node: '>=0.10.0'}
+
+  is-number@7.0.0:
+    resolution: {integrity: sha1-dTU0W4lnNNX4DE0GxQlVUnoU8Ss=}
+    engines: {node: '>=0.12.0'}
+
+  isexe@2.0.0:
+    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=}
+
+  jsonfile@6.1.0:
+    resolution: {integrity: sha1-vFWyY0eTxnnsZAMJTrE2mKbsCq4=}
+
+  map-stream@0.1.0:
+    resolution: {integrity: sha1-5WqpTEyAVaFkBKBnS3jyFffI4ZQ=}
+
+  merge2@1.4.1:
+    resolution: {integrity: sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=}
+    engines: {node: '>= 8'}
+
+  micromatch@4.0.8:
+    resolution: {integrity: sha1-1m+hjzpHB2eJMgubGvMr2G2fogI=}
+    engines: {node: '>=8.6'}
+
+  minimist@1.2.8:
+    resolution: {integrity: sha1-waRk52kzAuCCoHXO4MBXdBrEdyw=}
+
+  node-domexception@1.0.0:
+    resolution: {integrity: sha1-aIjbRqH3HAt2s/dVUBa2P+ZHZuU=}
+    engines: {node: '>=10.5.0'}
+
+  node-fetch@3.3.1:
+    resolution: {integrity: sha1-s+6ntUs6SAIORvT4i5xadDDSCy4=}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  path-type@4.0.0:
+    resolution: {integrity: sha1-hO0BwKe6OAr+CdkKjBgNzZ0DBDs=}
+    engines: {node: '>=8'}
+
+  pause-stream@0.0.11:
+    resolution: {integrity: sha1-/lo0sMvOErWqaitAPuLnO2AvFEU=}
+
+  picomatch@2.3.1:
+    resolution: {integrity: sha1-O6ODNzNkbZ0+SZWUbBNlpn+wekI=}
+    engines: {node: '>=8.6'}
+
+  ps-tree@1.2.0:
+    resolution: {integrity: sha1-XnQluJUIc2zdTyIk0Cj3uz9yLr0=}
+    engines: {node: '>= 0.10'}
+    hasBin: true
+
+  queue-microtask@1.2.3:
+    resolution: {integrity: sha1-SSkii7xyTfrEPg77BYyve2z7YkM=}
+
+  reusify@1.0.4:
+    resolution: {integrity: sha1-kNo4Kx4SbvwCFG6QhFqI2xKSXXY=}
+    engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+
+  run-parallel@1.2.0:
+    resolution: {integrity: sha1-ZtE2jae9+SHrnZW9GpIp5/IaQ+4=}
+
+  slash@4.0.0:
+    resolution: {integrity: sha1-JCI3IXbExsWt214q2oha+YSzlqc=}
+    engines: {node: '>=12'}
+
+  split@0.3.3:
+    resolution: {integrity: sha1-zQ7qXmOiEd//frDwkcQTPi0N0o8=}
+
+  stream-combiner@0.0.4:
+    resolution: {integrity: sha1-TV5DPBhSYd3mI8o/RMWGvPXErRQ=}
+
+  through@2.3.8:
+    resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
+
+  to-regex-range@5.0.1:
+    resolution: {integrity: sha1-FkjESq58jZiKMmAY7XL1tN0DkuQ=}
+    engines: {node: '>=8.0'}
+
+  undici-types@5.26.5:
+    resolution: {integrity: sha1-vNU5iT0AtW6WT9JlekhmsiGmVhc=}
+
+  universalify@2.0.1:
+    resolution: {integrity: sha1-Fo78IYCWTmOG0GHglN9hr+I5sY0=}
+    engines: {node: '>= 10.0.0'}
+
+  web-streams-polyfill@3.3.3:
+    resolution: {integrity: sha1-IHO5Gi/bH7+9QB594KyfghTOy0s=}
+    engines: {node: '>= 8'}
+
+  webpod@0.0.2:
+    resolution: {integrity: sha1-tXfJNgT9I1lkiHNYhxaLMjbjra4=}
+    hasBin: true
+
+  which@3.0.1:
+    resolution: {integrity: sha1-ifHNDCP2KagQX/5puBcnkch7S+E=}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    hasBin: true
+
+  yaml@2.6.0:
+    resolution: {integrity: sha1-FAWa2dCxaA0PBNOmD+APOoVzA8M=}
+    engines: {node: '>= 14'}
+    hasBin: true
+
+  zx@7.2.3:
+    resolution: {integrity: sha1-2f72vQhPfiGZQIDeCfsg5EEHTDk=}
+    engines: {node: '>= 16.0.0'}
+    hasBin: true
+
 snapshots:
 
-  '@ast-grep/cli-darwin-arm64@0.24.1':
+  '@ast-grep/cli-darwin-arm64@0.29.0':
     optional: true
 
-  '@ast-grep/cli-darwin-x64@0.24.1':
+  '@ast-grep/cli-darwin-x64@0.29.0':
     optional: true
 
-  '@ast-grep/cli-linux-arm64-gnu@0.24.1':
+  '@ast-grep/cli-linux-arm64-gnu@0.29.0':
     optional: true
 
-  '@ast-grep/cli-linux-x64-gnu@0.24.1':
+  '@ast-grep/cli-linux-x64-gnu@0.29.0':
     optional: true
 
-  '@ast-grep/cli-win32-arm64-msvc@0.24.1':
+  '@ast-grep/cli-win32-arm64-msvc@0.29.0':
     optional: true
 
-  '@ast-grep/cli-win32-ia32-msvc@0.24.1':
+  '@ast-grep/cli-win32-ia32-msvc@0.29.0':
     optional: true
 
-  '@ast-grep/cli-win32-x64-msvc@0.24.1':
+  '@ast-grep/cli-win32-x64-msvc@0.29.0':
     optional: true
 
-  '@ast-grep/cli@0.24.1':
+  '@ast-grep/cli@0.29.0':
     dependencies:
       detect-libc: 2.0.3
     optionalDependencies:
-      '@ast-grep/cli-darwin-arm64': 0.24.1
-      '@ast-grep/cli-darwin-x64': 0.24.1
-      '@ast-grep/cli-linux-arm64-gnu': 0.24.1
-      '@ast-grep/cli-linux-x64-gnu': 0.24.1
-      '@ast-grep/cli-win32-arm64-msvc': 0.24.1
-      '@ast-grep/cli-win32-ia32-msvc': 0.24.1
-      '@ast-grep/cli-win32-x64-msvc': 0.24.1
+      '@ast-grep/cli-darwin-arm64': 0.29.0
+      '@ast-grep/cli-darwin-x64': 0.29.0
+      '@ast-grep/cli-linux-arm64-gnu': 0.29.0
+      '@ast-grep/cli-linux-x64-gnu': 0.29.0
+      '@ast-grep/cli-win32-arm64-msvc': 0.29.0
+      '@ast-grep/cli-win32-ia32-msvc': 0.29.0
+      '@ast-grep/cli-win32-x64-msvc': 0.29.0
+
+  '@nodelib/fs.scandir@2.1.5':
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      run-parallel: 1.2.0
+
+  '@nodelib/fs.stat@2.0.5': {}
+
+  '@nodelib/fs.walk@1.2.8':
+    dependencies:
+      '@nodelib/fs.scandir': 2.1.5
+      fastq: 1.17.1
+
+  '@types/fs-extra@11.0.4':
+    dependencies:
+      '@types/jsonfile': 6.1.4
+      '@types/node': 18.19.61
+
+  '@types/jsonfile@6.1.4':
+    dependencies:
+      '@types/node': 18.19.61
+
+  '@types/minimist@1.2.5': {}
+
+  '@types/node@18.19.61':
+    dependencies:
+      undici-types: 5.26.5
+
+  '@types/ps-tree@1.1.6': {}
+
+  '@types/which@3.0.4': {}
+
+  braces@3.0.3:
+    dependencies:
+      fill-range: 7.1.1
+
+  chalk@5.3.0: {}
+
+  data-uri-to-buffer@4.0.1: {}
 
   detect-libc@2.0.3: {}
+
+  dir-glob@3.0.1:
+    dependencies:
+      path-type: 4.0.0
+
+  duplexer@0.1.2: {}
+
+  event-stream@3.3.4:
+    dependencies:
+      duplexer: 0.1.2
+      from: 0.1.7
+      map-stream: 0.1.0
+      pause-stream: 0.0.11
+      split: 0.3.3
+      stream-combiner: 0.0.4
+      through: 2.3.8
+
+  fast-glob@3.3.2:
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      '@nodelib/fs.walk': 1.2.8
+      glob-parent: 5.1.2
+      merge2: 1.4.1
+      micromatch: 4.0.8
+
+  fastq@1.17.1:
+    dependencies:
+      reusify: 1.0.4
+
+  fetch-blob@3.2.0:
+    dependencies:
+      node-domexception: 1.0.0
+      web-streams-polyfill: 3.3.3
+
+  fill-range@7.1.1:
+    dependencies:
+      to-regex-range: 5.0.1
+
+  formdata-polyfill@4.0.10:
+    dependencies:
+      fetch-blob: 3.2.0
+
+  from@0.1.7: {}
+
+  fs-extra@11.2.0:
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.1
+
+  fx@35.0.0: {}
+
+  glob-parent@5.1.2:
+    dependencies:
+      is-glob: 4.0.3
+
+  globby@13.2.2:
+    dependencies:
+      dir-glob: 3.0.1
+      fast-glob: 3.3.2
+      ignore: 5.3.2
+      merge2: 1.4.1
+      slash: 4.0.0
+
+  graceful-fs@4.2.11: {}
+
+  ignore@5.3.2: {}
+
+  is-extglob@2.1.1: {}
+
+  is-glob@4.0.3:
+    dependencies:
+      is-extglob: 2.1.1
+
+  is-number@7.0.0: {}
+
+  isexe@2.0.0: {}
+
+  jsonfile@6.1.0:
+    dependencies:
+      universalify: 2.0.1
+    optionalDependencies:
+      graceful-fs: 4.2.11
+
+  map-stream@0.1.0: {}
+
+  merge2@1.4.1: {}
+
+  micromatch@4.0.8:
+    dependencies:
+      braces: 3.0.3
+      picomatch: 2.3.1
+
+  minimist@1.2.8: {}
+
+  node-domexception@1.0.0: {}
+
+  node-fetch@3.3.1:
+    dependencies:
+      data-uri-to-buffer: 4.0.1
+      fetch-blob: 3.2.0
+      formdata-polyfill: 4.0.10
+
+  path-type@4.0.0: {}
+
+  pause-stream@0.0.11:
+    dependencies:
+      through: 2.3.8
+
+  picomatch@2.3.1: {}
+
+  ps-tree@1.2.0:
+    dependencies:
+      event-stream: 3.3.4
+
+  queue-microtask@1.2.3: {}
+
+  reusify@1.0.4: {}
+
+  run-parallel@1.2.0:
+    dependencies:
+      queue-microtask: 1.2.3
+
+  slash@4.0.0: {}
+
+  split@0.3.3:
+    dependencies:
+      through: 2.3.8
+
+  stream-combiner@0.0.4:
+    dependencies:
+      duplexer: 0.1.2
+
+  through@2.3.8: {}
+
+  to-regex-range@5.0.1:
+    dependencies:
+      is-number: 7.0.0
+
+  undici-types@5.26.5: {}
+
+  universalify@2.0.1: {}
+
+  web-streams-polyfill@3.3.3: {}
+
+  webpod@0.0.2: {}
+
+  which@3.0.1:
+    dependencies:
+      isexe: 2.0.0
+
+  yaml@2.6.0: {}
+
+  zx@7.2.3:
+    dependencies:
+      '@types/fs-extra': 11.0.4
+      '@types/minimist': 1.2.5
+      '@types/node': 18.19.61
+      '@types/ps-tree': 1.1.6
+      '@types/which': 3.0.4
+      chalk: 5.3.0
+      fs-extra: 11.2.0
+      fx: 35.0.0
+      globby: 13.2.2
+      minimist: 1.2.8
+      node-fetch: 3.3.1
+      ps-tree: 1.2.0
+      webpod: 0.0.2
+      which: 3.0.1
+      yaml: 2.6.0

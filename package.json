@@ -3,6 +3,9 @@
   "version": "1.0.0-rc.1",
   "description": "Ant Design Vue codemod tools",
   "main": "index.js",
+  "bin": {
+    "ant-design-vue-codemod": "bin/index.mjs"
+  },
   "scripts": {
     "grep": "ast-grep scan"
   },
@@ -13,6 +16,7 @@
   "author": "CrabSAMA",
   "license": "ISC",
   "dependencies": {
-    "@ast-grep/cli": "^0.24.1"
+    "@ast-grep/cli": "^0.29.0",
+    "zx": "^7.2.3"
   }
 }
