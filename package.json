@@ -1,6 +1,6 @@
 {
   "name": "ant-design-vue-codemod",
-  "version": "1.0.0-rc.3",
+  "version": "1.0.0",
   "description": "Ant Design Vue codemod tools",
   "main": "index.js",
   "bin": {
